@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Contacts IR</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mycss/mycss.css" rel="stylesheet">
+
+    <script  type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script  type="text/javascript" charset="utf-8" src="scriptjs.js"></script>
+</head>
+<body>
+<h1>PHP Contacts</h1>
+
+<!-- Form con richiamo direttamente allo script PHP [ Funzionante ]-->
+<!-- <div id="insert"> 
+	<form action="insert.php" method="post">
+	Name: <input type="text" name="name"><br>
+	Age: <input type="text" name="age"><br>
+	Number: <input type="text" name="number"><br>
+	E-mail: <input type="text" name="email"><br>
+	<input type="submit">
+	</form>
+</div> -->
+
+<div id="insert" >
+<!-- <form action="insert.php" method="post"> -->
+    <div class="col-md-3" style="background-color:lavender;">
+		Name: <input id="name_input" type="text" name="name"><br>
+	</div>
+	<div class="col-md-3" style="background-color:lavender;">
+		Age: <input id="age_input" type="text" name="age"><br>
+	</div>
+	<div class="col-md-3" style="background-color:lavender;">
+		Number: <input id="number_input" type="text" name="number"><br>
+	</div>
+	<div class="col-md-3" style="background-color:lavender;">
+		E-mail: <input id="email_input" type="text" name="email"><br>
+	</div>
+	<!-- <input type="submit"> -->
+<!-- </form> -->
+</div>
+	
+	<div class="col-md-12">
+		<div class="col-md-4" ></div>
+		<div class="col-md-4" id="idWithBtn">
+			<button id="test" type="button"> Insert </button>
+		</div>
+		<div class="col-md-4" ></div>
+	</div>
+
+
+
+<div id="contacts" class="col-md-12">
+	<div class="col-md-4" ></div>
+		<div class="col-md-4" >
+  			<h2>List of contacts:</h2>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Age</th>
+							<th>Number</th>
+							<th>Email</th>
+							<th>Operation</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
+		</div>
+	<div class="col-md-4"></div>
+</div>
+
+</body>
+</html>
